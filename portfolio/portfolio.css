@@ -1,0 +1,39 @@
+h1 {
+    color: #6e1078;
+    text-align: center;
+    background-color: aliceblue;
+}
+section {
+    background: rgba(238, 182, 223, 0.314);
+    padding:20px;
+    margin: 20px auto 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow:3px 3px 10px rgb(233, 168, 215);
+}
+li {
+    margin-bottom: 10px;
+}
+h2 {
+    color:#440c4f;
+}
+h3 {
+    color:#6c1462;
+}
+#Projects a{
+    text-decoration: none;
+    color:#5555ec;
+    font-weight: bold;
+    font-size: 18px;
+}
+#Projects a:hover {
+    text-decoration: underline;
+}
+input[type="submit"] {
+    padding:5px;
+    background-color: rgb(119, 119, 208);
+    color: white;
+    } 
+input[type="submit"]:hover{
+    background-color: rgb(20, 20, 207);
+}

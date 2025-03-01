@@ -1,0 +1,32 @@
+body{
+    display:flex;
+    justify-content: center;
+  }
+    form{
+        border:2px solid black;
+        height:80vh;
+        width:60vh;
+        padding:5vh;
+        background-color:#e1d6ee;
+        font-size: 2vh;
+        
+    }
+    .rating {
+
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 30px;
+      justify-content:start;
+      color:grey;
+    }
+    .rating input{
+      display: none;
+    }
+    .rating input:checked ~ label {
+      color: gold;
+    }
+    button{
+      background-color:#671BC7;
+      color: white;
+      padding:5px;
+    }
