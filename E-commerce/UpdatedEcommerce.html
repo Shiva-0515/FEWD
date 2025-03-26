@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - E-Commerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#home-tab" data-bs-toggle="tab">E-Shop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab-btn" data-bs-toggle="tab" href="#home-tab" role="tab" aria-controls="home-tab" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="about-tab-btn" data-bs-toggle="tab" href="#about-tab" role="tab" aria-controls="about-tab" aria-selected="false">About Us</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="products-tab-btn" data-bs-toggle="tab" href="#products-tab" role="tab" aria-controls="products-tab" aria-selected="false">Products</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="gallery-tab-btn" data-bs-toggle="tab" href="#gallery-tab" role="tab" aria-controls="gallery-tab" aria-selected="false">Gallery</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="partners-tab-btn" data-bs-toggle="tab" href="#partners-tab" role="tab" aria-controls="partners-tab" aria-selected="false">Partners</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="contact-tab-btn" data-bs-toggle="tab" href="#contact-tab" role="tab" aria-controls="contact-tab" aria-selected="false">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <!-- Home Tab -->
+        <div class="tab-pane fade show active" id="home-tab" role="tabpanel" aria-labelledby="home-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>Welcome to E-Shop!</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5 flex-grow-1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-4">
+                            <h2>Featured Products</h2>
+                            <p>Check out our latest products and deals!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Product Cards -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 1</h5>
+                                    <p class="card-text">This is a description for product 1.</p>
+                                    <p class="card-text"><strong>Rs.999</strong></p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 2</h5>
+                                    <p class="card-text">This is a description for product 2.</p>
+                                    <p class="card-text"><strong>Rs.999</strong></p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Product Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product 3</h5>
+                                    <p class="card-text">This is a description for product 3.</p>
+                                    <p class="card-text"><strong>Rs.599</strong></p>
+                                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- About Us Tab -->
+        <div class="tab-pane fade" id="about-tab" role="tabpanel" aria-labelledby="about-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>About Us</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h2>Our Story</h2>
+                            <p>We are a family-owned business.</p>
+                            <p>Founded in 2010, E-Shop has been providing quality products to our customers for over a decade. Our mission is to deliver exceptional products at competitive prices while maintaining the highest standards of customer service.</p>
+                            <p>What started as a small local shop has grown into an online marketplace serving customers worldwide, but we've never lost sight of our family values and commitment to personal service.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <img src="https://via.placeholder.com/600x400" alt="Our Team" class="img-fluid rounded shadow">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-5">
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Our Mission</h3>
+                                    <p class="card-text">To provide high-quality products that enhance our customers' daily lives while maintaining affordability and excellent service.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Our Vision</h3>
+                                    <p class="card-text">To become the leading e-commerce platform known for quality, innovation, and customer satisfaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Our Values</h3>
+                                    <p class="card-text">Integrity, quality, customer focus, and community engagement are the core values that guide our business practices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Products Tab -->
+        <div class="tab-pane fade" id="products-tab" role="tabpanel" aria-labelledby="products-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>Our Products</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-4">
+                            <h2>Product Categories</h2>
+                            <p>Explore our wide range of products</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Category Cards -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Electronics">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Electronics</h3>
+                                    <p class="card-text">Latest gadgets and electronic devices</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Clothing">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Clothing</h3>
+                                    <p class="card-text">Fashion apparel for all ages</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Home & Kitchen">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Home & Kitchen</h3>
+                                    <p class="card-text">Essential items for your home</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sports">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Sports & Outdoors</h3>
+                                    <p class="card-text">Equipment for all your athletic needs</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Beauty">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Beauty & Personal Care</h3>
+                                    <p class="card-text">Top quality beauty products</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm h-100 category-card">
+                                <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Books">
+                                <div class="card-body text-center">
+                                    <h3 class="card-title">Books & Media</h3>
+                                    <p class="card-text">Books, movies, and music</p>
+                                    <a href="#" class="btn btn-outline-primary">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Gallery Tab -->
+        <div class="tab-pane fade" id="gallery-tab" role="tabpanel" aria-labelledby="gallery-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>Gallery</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-5">
+                            <h2>Our Product Gallery</h2>
+                            <p>A visual showcase of our top products</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 1" class="img-fluid rounded shadow mb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 2" class="img-fluid rounded shadow mb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 3" class="img-fluid rounded shadow mb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 4" class="img-fluid rounded shadow mb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 5" class="img-fluid rounded shadow mb-4">
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="https://via.placeholder.com/600x400" alt="Gallery Image 6" class="img-fluid rounded shadow mb-4">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Partners Tab -->
+        <div class="tab-pane fade" id="partners-tab" role="tabpanel" aria-labelledby="partners-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>Our Partners</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center mb-5">
+                            <h2>Trusted Partners</h2>
+                            <p>We work with the best in the industry to bring you quality products</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-4">
+                            <img src="https://via.placeholder.com/200x100" alt="Partner 1" class="img-fluid mb-3 shadow-sm">
+                            <h4>Partner Company 1</h4>
+                            <p>Leading provider of electronic products</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="https://via.placeholder.com/200x100" alt="Partner 2" class="img-fluid mb-3 shadow-sm">
+                            <h4>Partner Company 2</h4>
+                            <p>Innovative fashion designer</p>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <img src="https://via.placeholder.com/200x100" alt="Partner 3" class="img-fluid mb-3 shadow-sm">
+                            <h4>Partner Company 3</h4>
+                            <p>Premium home goods manufacturer</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Contact Us Tab -->
+        <div class="tab-pane fade" id="contact-tab" role="tabpanel" aria-labelledby="contact-tab-btn">
+            <!-- Header -->
+            <header class="bg-light text-center py-5">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h2>Get in Touch</h2>
+                            <p>We'd love to hear from you! Fill out the form and we'll get back to you as soon as possible.</p>
+                            
+                            <form>
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </form>
+                        </div>
+                        <div class="col-lg-6">
+                            <h2>Contact Information</h2>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-geo-alt fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Address</h5>
+                                    <p>123 E-Shop Street, Narayanguda, Hyderabad, Telanagana ,India.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-telephone fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Phone</h5>
+                                    <p>+91 9999999999</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-envelope fs-4"></i>
+                                </div>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>info@eshop.com</p>
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <h5>Business Hours</h5>
+                                <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                Saturday: 10:00 AM - 4:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2025 E-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
