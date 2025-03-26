@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 bg-dark">
+    <div class="card p-4 shadow-lg bg-light" style="max-width: 600px; width: 100%; border-radius: 15px;">
+        <form>
+            <h2 class="text-center text-danger mb-4 fw-bold">Share Your Experience</h2>
+            
+            <!-- Name Input -->
+            <div class="mb-3">
+                <label for="name" class="form-label text-secondary fw-bold">Full Name:</label>
+                <input type="text" class="form-control border-secondary" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <!-- Email Input -->
+            <div class="mb-3">
+                <label for="email" class="form-label text-secondary fw-bold">Email Address:</label>
+                <input type="email" class="form-control border-secondary" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            
+            <!-- Phone Number Input -->
+            <div class="mb-3">
+                <label for="phno" class="form-label text-secondary fw-bold">Contact Number:</label>
+                <input type="tel" class="form-control border-secondary" id="phno" name="phno" placeholder="Enter your phone number" required>
+            </div>
+            
+            <!-- Rating Section -->
+            <label class="form-label text-secondary fw-bold">Rate Your Experience:</label>
+            <div class="d-flex justify-content-between mb-4 gap-2">
+                <input type="radio" class="btn-check" id="star1" name="rating" value="5">
+                <label class="btn btn-outline-danger flex-grow-1" for="star1">★ Excellent</label>
+                <input type="radio" class="btn-check" id="star2" name="rating" value="4">
+                <label class="btn btn-outline-danger flex-grow-1" for="star2">★ Good</label>
+                <input type="radio" class="btn-check" id="star3" name="rating" value="3">
+                <label class="btn btn-outline-danger flex-grow-1" for="star3">★ Average</label>
+                <input type="radio" class="btn-check" id="star4" name="rating" value="2">
+                <label class="btn btn-outline-danger flex-grow-1" for="star4">★ Poor</label>
+                <input type="radio" class="btn-check" id="star5" name="rating" value="1">
+                <label class="btn btn-outline-danger flex-grow-1" for="star5">★ Bad</label>
+            </div>
+
+            <!-- Question Section -->
+            <div class="mb-3">
+                <label for="question" class="form-label text-secondary fw-bold">Questions? (optional)</label>
+                <textarea class="form-control border-secondary" id="question" rows="2" placeholder="Any questions about our products or services?"></textarea>
+            </div>
+
+            <!-- Comments Section -->
+            <div class="mb-4">
+                <label for="feedback" class="form-label text-secondary fw-bold">Detailed Feedback:</label>
+                <textarea class="form-control border-secondary" id="feedback" name="feedback" rows="3" placeholder="Please share your thoughts with us..."></textarea>
+            </div>
+            
+            <!-- Submit Button -->
+            <div class="d-grid">
+                <button type="submit" class="btn btn-danger py-2 fw-bold">SUBMIT FEEDBACK</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
